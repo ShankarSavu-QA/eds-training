@@ -1,57 +1,46 @@
 .dellhero {
+  background: #062f63;
+  padding: 70px 80px;
+}
+
+.dellhero > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #062f63, #052b5b);
-  color: white;
-  padding: 70px 80px;
   gap: 60px;
-  overflow: hidden;
 }
 
-.dellhero > div:first-child {
-  flex: 1;
-  max-width: 520px;
+.dellhero > div > div:first-child {
+  width: 45%;
+  color: white;
 }
 
-.dellhero > div:last-child {
-  flex: 1;
+.dellhero > div > div:last-child {
+  width: 55%;
 }
 
-.dellhero p:first-child {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 18px;
-  color: #d7e6ff;
-}
-
-.dellhero h1,
-.dellhero h2,
-.dellhero p:nth-child(2) {
-  font-size: 56px;
+.dellhero h2 {
+  font-size: 58px;
   line-height: 1.1;
   font-weight: 300;
-  margin-bottom: 24px;
+  margin: 20px 0;
   color: white;
 }
 
-.dellhero p:nth-child(3) {
+.dellhero p {
   font-size: 18px;
   line-height: 1.6;
-  color: #dbe7f5;
-  margin-bottom: 32px;
+  color: #dce7f5;
 }
 
 .dellhero a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  margin-top: 28px;
+  margin-right: 18px;
   padding: 14px 28px;
-  margin-right: 14px;
   text-decoration: none;
   font-weight: 600;
   border-radius: 4px;
-  transition: all 0.3s ease;
 }
 
 .dellhero a:first-of-type {
@@ -59,43 +48,31 @@
   color: white;
 }
 
-.dellhero a:first-of-type:hover {
-  background: #3b9cff;
-}
-
 .dellhero a:last-of-type {
   color: white;
-  border: 1px solid transparent;
 }
 
-.dellhero a:last-of-type:hover {
-  border-color: rgba(255,255,255,0.4);
-}
-
-.dellhero picture,
 .dellhero img {
   width: 100%;
   display: block;
-}
-
-.dellhero img {
   border-radius: 2px;
-  object-fit: cover;
 }
 
 @media (max-width: 900px) {
-  .dellhero {
+  .dellhero > div {
     flex-direction: column;
+  }
+
+  .dellhero > div > div:first-child,
+  .dellhero > div > div:last-child {
+    width: 100%;
+  }
+
+  .dellhero {
     padding: 40px 20px;
   }
 
-  .dellhero h1,
-  .dellhero h2,
-  .dellhero p:nth-child(2) {
+  .dellhero h2 {
     font-size: 38px;
-  }
-
-  .dellhero img {
-    margin-top: 20px;
   }
 }
