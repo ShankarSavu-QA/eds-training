@@ -3,6 +3,7 @@
   padding: 70px 80px;
 }
 
+/* Main layout */
 .dellhero > div {
   display: flex;
   align-items: center;
@@ -10,33 +11,57 @@
   gap: 60px;
 }
 
+/* Left content */
 .dellhero > div > div:first-child {
   width: 42%;
   color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* Right image */
 .dellhero > div > div:last-child {
   width: 58%;
 }
 
+/* Dell Rewards text */
+.dellhero p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* Main heading */
 .dellhero h2 {
   font-size: 40px;
   line-height: 1.1;
   font-weight: 300;
   color: white;
+
+  margin-top: 0;
+  margin-bottom: 18px;
+
   max-width: 320px;
 }
 
+/* Description */
 .dellhero p {
   font-size: 16px;
   line-height: 1.6;
   color: #dce7f5;
+
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
-.dellhero p:first-child {
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
+/* CTA wrapper spacing */
+.dellhero p:last-child {
+  margin-top: 18px;
 }
 
 /* CTA buttons */
@@ -44,13 +69,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   padding: 14px 28px;
-  text-decoration: none;
   border-radius: 4px;
+
+  text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  margin-right: 16px;
-  transition: 0.3s ease;
+
+  transition: all 0.3s ease;
+
+  margin-right: 18px;
 }
 
 /* Primary CTA */
@@ -59,11 +88,10 @@
   color: white;
 }
 
-/* Third variant CTA */
+/* Third/Tertiary CTA */
 .dellhero a:last-of-type {
   background: transparent;
   color: white;
-  border: none;
   padding-left: 0;
 }
 
@@ -73,12 +101,18 @@
 }
 
 /* Image */
+.dellhero picture,
 .dellhero img {
   width: 100%;
   display: block;
-  border-radius: 2px;
 }
 
+.dellhero img {
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
   .dellhero {
     padding: 40px 20px;
@@ -97,28 +131,8 @@
     font-size: 34px;
     max-width: 100%;
   }
-}
-.dellhero > div {
-  display: flex;
-  align-items: center; /* important */
-  justify-content: space-between;
-  gap: 60px;
-}
 
-.dellhero > div > div:first-child {
-  width: 42%;
-  color: white;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertically center content */
-}
-
-.dellhero > div > div:last-child {
-  width: 58%;
-}
-
-.dellhero img {
-  width: 100%;
-  display: block;
+  .dellhero img {
+    margin-top: 20px;
+  }
 }
