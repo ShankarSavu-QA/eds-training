@@ -11,47 +11,71 @@
 }
 
 .dellhero > div > div:first-child {
-  width: 45%;
+  width: 42%;
   color: white;
 }
 
 .dellhero > div > div:last-child {
-  width: 55%;
+  width: 58%;
 }
 
 .dellhero h2 {
-  font-size: 58px;
+  font-size: 40px;
   line-height: 1.1;
   font-weight: 300;
-  margin: 20px 0;
   color: white;
+  margin: 16px 0 24px;
+  max-width: 320px;
 }
 
 .dellhero p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #dce7f5;
+  margin-bottom: 10px;
 }
 
+.dellhero p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+/* CTA buttons */
 .dellhero a {
-  display: inline-block;
-  margin-top: 28px;
-  margin-right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 14px 28px;
   text-decoration: none;
-  font-weight: 600;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-right: 16px;
+  transition: 0.3s ease;
 }
 
+/* Primary CTA */
 .dellhero a:first-of-type {
   background: #0e84ff;
   color: white;
 }
 
+/* Third variant CTA */
 .dellhero a:last-of-type {
+  background: transparent;
   color: white;
+  border: none;
+  padding-left: 0;
 }
 
+.dellhero a:last-of-type::after {
+  content: " →";
+  margin-left: 6px;
+}
+
+/* Image */
 .dellhero img {
   width: 100%;
   display: block;
@@ -59,6 +83,10 @@
 }
 
 @media (max-width: 900px) {
+  .dellhero {
+    padding: 40px 20px;
+  }
+
   .dellhero > div {
     flex-direction: column;
   }
@@ -68,11 +96,8 @@
     width: 100%;
   }
 
-  .dellhero {
-    padding: 40px 20px;
-  }
-
   .dellhero h2 {
-    font-size: 38px;
+    font-size: 34px;
+    max-width: 100%;
   }
 }
