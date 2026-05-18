@@ -1,4 +1,4 @@
-.hero {
+.dellhero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,67 +8,67 @@
   gap: 40px;
 }
 
-.hero-content {
+.dellhero-content {
   flex: 1;
   max-width: 500px;
 }
 
-.hero-eyebrow {
+.dellhero-eyebrow {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
   display: inline-block;
 }
 
-.hero h2 {
+.dellhero h2 {
   font-size: 56px;
   line-height: 1.1;
   margin-bottom: 24px;
 }
 
-.hero p {
+.dellhero p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
-.hero-buttons {
+.dellhero-buttons {
   display: flex;
   gap: 16px;
 }
 
-.hero .btn {
+.dellhero .btn {
   padding: 14px 28px;
   text-decoration: none;
   font-weight: 600;
   border-radius: 4px;
 }
 
-.hero .primary {
+.dellhero .primary {
   background: #0076ce;
   color: white;
 }
 
-.hero .secondary {
+.dellhero .secondary {
   color: white;
 }
 
-.hero-image {
+.dellhero-image {
   flex: 1;
 }
 
-.hero-image img {
+.dellhero-image img {
   width: 100%;
   border-radius: 4px;
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .dellhero {
     flex-direction: column;
     padding: 40px 20px;
   }
 
-  .hero h2 {
+  .dellhero h2 {
     font-size: 36px;
   }
 }
