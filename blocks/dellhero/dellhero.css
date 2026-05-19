@@ -51,6 +51,12 @@
 .dellhero.block div div p:nth-child(2){
     font-size: 40px;
 }
+.dellhero.block div div p:nth-child(2){
+    max-width: 300px;
+}
+.dellhero.block div div p:nth-child(3){
+    max-width: 400px;
+}
 /* Description */
 .dellhero p {
   font-size: 16px;
