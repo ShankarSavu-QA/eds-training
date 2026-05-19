@@ -48,7 +48,9 @@
 
   max-width: 320px;
 }
-
+.dellhero.block div div:nth-child(2){
+    font-size: 40px;
+}
 /* Description */
 .dellhero p {
   font-size: 16px;
