@@ -92,7 +92,8 @@
 
 /* Primary CTA */
 .dellhero a:first-of-type {
-  background: #0e84ff;
+  background: #0672cd;
+  border-color: #0672cd;
   color: white;
 }
 
